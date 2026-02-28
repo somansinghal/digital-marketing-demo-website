@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexta Solutions | Data-Driven Digital Marketing Agency</title>
+    <meta name="description"
+        content="We scale brands globally with data-driven digital marketing, SEO, Ads, and Web Development.">
+
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Tailwind CSS (via CDN for single file) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        darkBg: '#0f0f0f',
+                        darkCard: '#1a1a1a',
+                        lightBg: '#f8fafc',
+                        lightCard: '#ffffff',
+                        brandGold: '#FFD700',
+                        brandOrange: '#FF8C00',
+                    },
+                    backgroundImage: {
+                        'gradient-brand': 'linear-gradient(to right, #FFD700, #FF8C00)',
+                        'gradient-brand-hover': 'linear-gradient(to right, #FF8C00, #FFD700)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Nexgenta Solutions",
+      "url": "https://www.auradigital.com",
+      "logo": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=100",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+1-800-555-0199",
+        "contactType": "customer service"
+      },
+      "sameAs": [
+        "https://facebook.com/auradigital",
+        "https://twitter.com/auradigital",
+        "https://linkedin.com/company/auradigital"
+      ]
+    }
+    </script>
+</head>
+
+<body class="bg-lightBg text-gray-900 dark:bg-darkBg dark:text-gray-100 transition-colors duration-500">
+
+    <!-- Navbar -->
+    <header id="navbar" class="fixed w-full top-0 z-50 py-6 transition-all duration-300">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#" class="text-3xl font-bold tracking-tight text-gradient">
+                Nexta<span class="text-brandOrange dark:text-white text-lg ml-1">Solutions</span>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden lg:flex items-center space-x-8 font-medium">
+                <a href="#services" class="hover:text-brandOrange transition">Services</a>
+                <a href="#about" class="hover:text-brandOrange transition">About</a>
+                <a href="#portfolio" class="hover:text-brandOrange transition">Work</a>
+                <a href="#pricing" class="hover:text-brandOrange transition">Pricing</a>
+                <a href="#blog" class="hover:text-brandOrange transition">Blog</a>
+
+                <!-- Theme Toggle -->
+                <button id="themeToggle"
+                    class="p-2 rounded-full glass hover:bg-gray-200 dark:hover:bg-gray-800 transition"
+                    aria-label="Toggle Dark Mode">
+                    <i class="fas fa-moon dark:hidden"></i>
+                    <i class="fas fa-sun hidden dark:block text-brandGold"></i>
+                </button>
+
+                <!-- CTA -->
+                <a href="#contact"
+                    class="bg-gradient-brand text-darkBg px-6 py-2.5 rounded-[20px] font-bold shadow-lg hover:shadow-orange-500/30 transition-transform transform hover:-translate-y-1">
+                    Free Consultation
+                </a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <div class="lg:hidden flex items-center space-x-4">
+                <button id="themeToggleMobile" class="p-2 rounded-full glass" aria-label="Toggle Dark Mode">
+                    <i class="fas fa-moon dark:hidden"></i>
+                    <i class="fas fa-sun hidden dark:block text-brandGold"></i>
+                </button>
+                <button id="mobileMenuBtn" class="text-2xl focus:outline-none" aria-label="Open Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Nav (Hidden) -->
+        <div id="mobileNav"
+            class="hidden absolute top-full left-0 w-full glass shadow-2xl flex-col p-6 space-y-4 font-medium border-t border-gray-200 dark:border-gray-800">
+            <a href="#services" class="mobile-link block hover:text-brandOrange transition">Services</a>
+            <a href="#about" class="mobile-link block hover:text-brandOrange transition">About</a>
+            <a href="#portfolio" class="mobile-link block hover:text-brandOrange transition">Work</a>
+            <a href="#pricing" class="mobile-link block hover:text-brandOrange transition">Pricing</a>
+            <a href="#blog" class="mobile-link block hover:text-brandOrange transition">Blog</a>
+            <a href="#contact"
+                class="mobile-link bg-gradient-brand text-darkBg px-6 py-3 rounded-[20px] font-bold text-center mt-4 shadow-lg block">
+                Free Consultation
+            </a>
+        </div>
+    </header>
+
+    <!-- 1) HERO SECTION -->
+    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden flex items-center min-h-[90vh]">
+        <!-- Background Decorative Blobs -->
+        <div
+            class="absolute top-0 right-0 -mr-32 -mt-32 w-96 h-96 rounded-full bg-brandOrange/20 blur-3xl animate-float">
+        </div>
+        <div
+            class="absolute bottom-0 left-0 -ml-32 -mb-32 w-80 h-80 rounded-full bg-brandGold/20 blur-3xl animate-float-delayed">
+        </div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <!-- Text Content -->
+                <div class="w-full lg:w-1/2 text-center lg:text-left reveal">
+                    <div
+                        class="inline-block px-4 py-2 rounded-full glass text-sm font-semibold text-brandOrange mb-6 border border-brandOrange/30">
+                        <i class="fas fa-star text-brandGold mr-2"></i> Trusted by 200+ brands worldwide
+                    </div>
+                    <h1 class="text-5xl lg:text-7xl font-extrabold leading-[1.1] mb-6 tracking-tight">
+                        We Scale Brands With <br class="hidden lg:block" />
+                        <span class="text-gradient">Data-Driven</span> <br />
+                        Digital Marketing
+                    </h1>
+                    <p class="text-lg text-gray-600 dark:text-gray-400 mb-10 max-w-xl mx-auto lg:mx-0 font-light">
+                        Unlock explosive growth. We blend creative strategy, advanced AI, and relentless optimization to
+                        turn clicks into loyal customers and revenue.
+                    </p>
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                        <a href="#contact"
+                            class="w-full sm:w-auto px-8 py-4 rounded-[20px] bg-gradient-brand text-darkBg font-bold text-lg shadow-[0_0_20px_rgba(255,140,0,0.3)] hover:shadow-[0_0_30px_rgba(255,140,0,0.6)] transform hover:-translate-y-1 transition-all">
+                            Get Free Consultation
+                        </a>
+                        <a href="#portfolio"
+                            class="w-full sm:w-auto px-8 py-4 rounded-[20px] glass font-semibold text-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-all border border-gray-300 dark:border-gray-700">
+                            View Our Work <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Image/Visual Content -->
+                <div class="w-full lg:w-1/2 reveal delay-200 relative mt-12 lg:mt-0">
+                    <div
+                        class="relative w-full max-w-lg mx-auto aspect-[4/5] glow-border card-radius p-2 bg-lightBg dark:bg-darkBg">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=800"
+                            alt="Agency Founder"
+                            class="w-full h-full object-cover card-radius shadow-2xl filter brightness-95">
+
+                        <!-- Floating Stat Card 1 -->
+                        <div class="absolute -left-6 lg:-left-12 top-20 glass p-4 card-radius shadow-xl animate-float">
+                            <div class="flex items-center gap-4">
+                                <div
+                                    class="w-12 h-12 rounded-full bg-brandOrange/20 flex items-center justify-center text-brandOrange text-xl">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-2xl text-gradient counter" data-target="10">0</h4>
+                                    <p class="text-xs text-gray-500 dark:text-gray-400 font-semibold uppercase">M+
+                                        Revenue Generated</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Floating Stat Card 2 -->
+                        <div
+                            class="absolute -right-6 lg:-right-12 bottom-20 glass p-4 card-radius shadow-xl animate-float-delayed">
+                            <div class="flex items-center gap-4">
+                                <div
+                                    class="w-12 h-12 rounded-full bg-brandGold/20 flex items-center justify-center text-brandGold text-xl">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-2xl text-gradient counter" data-target="200">0</h4>
+                                    <p class="text-xs text-gray-500 dark:text-gray-400 font-semibold uppercase">Active
+                                        Clients</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Stats Bar -->
+            <div
+                class="mt-24 grid grid-cols-2 md:grid-cols-4 gap-6 text-center border-t border-gray-200 dark:border-gray-800 pt-10 reveal">
+                <div>
+                    <h3 class="text-4xl font-bold text-gray-800 dark:text-white mb-2"><span
+                            class="counter text-gradient" data-target="200">0</span>+</h3>
+                    <p class="text-gray-500 dark:text-gray-400 font-medium">Global Clients</p>
+                </div>
+                <div>
+                    <h3 class="text-4xl font-bold text-gray-800 dark:text-white mb-2"><span
+                            class="counter text-gradient" data-target="500">0</span>+</h3>
+                    <p class="text-gray-500 dark:text-gray-400 font-medium">Projects Done</p>
+                </div>
+                <div>
+                    <h3 class="text-4xl font-bold text-gray-800 dark:text-white mb-2"><span
+                            class="counter text-gradient" data-target="98">0</span>%</h3>
+                    <p class="text-gray-500 dark:text-gray-400 font-medium">Client Retention</p>
+                </div>
+                <div>
+                    <h3 class="text-4xl font-bold text-gray-800 dark:text-white mb-2"><span
+                            class="counter text-gradient" data-target="10">0</span>M+</h3>
+                    <p class="text-gray-500 dark:text-gray-400 font-medium">Ad Spend Managed</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2) SERVICES SECTION -->
+    <section id="services" class="py-24 bg-gray-50 dark:bg-[#121212]">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+                <h3 class="text-brandOrange font-bold tracking-wider uppercase text-sm mb-2">What We Do</h3>
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">High-Impact <span class="text-gradient">Services</span>
+                </h2>
+                <p class="text-gray-600 dark:text-gray-400">End-to-end digital solutions designed to dominate your
+                    market, outrank competitors, and maximize ROI.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="glass card-radius p-8 hover-glow group cursor-pointer reveal">
+                    <div
+                        class="w-16 h-16 rounded-[15px] bg-brandOrange/10 flex items-center justify-center text-brandOrange text-3xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">SEO Optimization</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-6 text-sm leading-relaxed">Dominate search rankings
+                        with technical SEO, high-authority backlinking, and semantic content strategies.</p>
+                    <a href="#"
+                        class="font-bold text-brandOrange flex items-center group-hover:text-brandGold transition-colors">
+                        Learn More <i
+                            class="fas fa-arrow-right ml-2 group-hover:translate-x-2 transition-transform"></i>
+                    </a>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="glass card-radius p-8 hover-glow group cursor-pointer reveal delay-100">
+                    <div
+                        class="w-16 h-16 rounded-[15px] bg-blue-500/10 flex items-center justify-center text-blue-500 text-3xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-share-nodes"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Social Media</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-6 text-sm leading-relaxed">Engage your audience and
+                        build communities across Instagram, TikTok, LinkedIn, and Twitter with viral strategies.</p>
+                    <a href="#"
+                        class="font-bold text-brandOrange flex items-center group-hover:text-brandGold transition-colors">
+                        Learn More <i
+                            class="fas fa-arrow-right ml-2 group-hover:translate-x-2 transition-transform"></i>
+                    </a>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="glass card-radius p-8 hover-glow group cursor-pointer reveal delay-200">
+                    <div
+                        class="w-16 h-16 rounded-[15px] bg-green-500/10 flex items-center justify-center text-green-500 text-3xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Google & Meta Ads</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-6 text-sm leading-relaxed">High-converting PPC
+                        campaigns. We optimize cost-per-acquisition and scale your revenue predictably.</p>
+                    <a href="#"
+                        class="font-bold text-brandOrange flex items-center group-hover:text-brandGold transition-colors">
+                        Learn More <i
+                            class="fas fa-arrow-right ml-2 group-hover:translate-x-2 transition-transform"></i>
+                    </a>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="glass card-radius p-8 hover-glow group cursor-pointer reveal">
+                    <div
+                        class="w-16 h-16 rounded-[15px] bg-purple-500/10 flex items-center justify-center text-purple-500 text-3xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Web Development</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-6 text-sm leading-relaxed">Lightning-fast,
+                        mobile-first, conversion-optimized websites built with the latest modern frameworks.</p>
+                    <a href="#"
+                        class="font-bold text-brandOrange flex items-center group-hover:text-brandGold transition-colors">
+                        Learn More <i
+                            class="fas fa-arrow-right ml-2 group-hover:translate-x-2 transition-transform"></i>
+                    </a>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="glass card-radius p-8 hover-glow group cursor-pointer reveal delay-100">
+                    <div
+                        class="w-16 h-16 rounded-[15px] bg-pink-500/10 flex items-center justify-center text-pink-500 text-3xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-pen-nib"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Branding & Creative</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-6 text-sm leading-relaxed">Stand out with premium
+                        visual identities, impactful logo design, and scroll-stopping ad creatives.</p>
+                    <a href="#"
+                        class="font-bold text-brandOrange flex items-center group-hover:text-brandGold transition-colors">
+                        Learn More <i
+                            class="fas fa-arrow-right ml-2 group-hover:translate-x-2 transition-transform"></i>
+                    </a>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="glass card-radius p-8 hover-glow group cursor-pointer reveal delay-200">
+                    <div
+                        class="w-16 h-16 rounded-[15px] bg-brandGold/10 flex items-center justify-center text-brandGold text-3xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">AI Automation</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-6 text-sm leading-relaxed">Streamline operations and
+                        lead gen with custom AI chatbots, CRM automations, and data processing.</p>
+                    <a href="#"
+                        class="font-bold text-brandOrange flex items-center group-hover:text-brandGold transition-colors">
+                        Learn More <i
+                            class="fas fa-arrow-right ml-2 group-hover:translate-x-2 transition-transform"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3) ABOUT US SECTION -->
+    <section id="about" class="py-24 overflow-hidden relative">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row gap-16 items-center">
+                <!-- Left Image -->
+                <div class="w-full lg:w-1/2 relative reveal">
+                    <div
+                        class="absolute inset-0 bg-brandOrange/20 blur-3xl rounded-full transform -translate-x-10 translate-y-10">
+                    </div>
+                    <div class="relative rounded-[20px] overflow-hidden group">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800"
+                            alt="Agency Team"
+                            class="w-full h-full object-cover rounded-[20px] transition-transform duration-700 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-8">
+                            <div>
+                                <p class="text-white text-xl font-bold">Elena Rostova</p>
+                                <p class="text-brandGold text-sm">Founder & CEO</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Experience Badge -->
+                    <div
+                        class="absolute -right-6 top-1/2 -translate-y-1/2 glass p-6 card-radius shadow-2xl animate-float">
+                        <h4 class="text-4xl font-extrabold text-gradient mb-1">10+</h4>
+                        <p class="text-sm font-bold text-gray-800 dark:text-white uppercase tracking-wider">Years
+                            of<br>Excellence</p>
+                    </div>
+                </div>
+
+                <!-- Right Content -->
+                <div class="w-full lg:w-1/2 reveal delay-200">
+                    <h3 class="text-brandOrange font-bold tracking-wider uppercase text-sm mb-2">Who We Are</h3>
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6">Building Brands That <br /><span
+                            class="text-gradient">Leave a Legacy</span></h2>
+
+                    <p class="text-gray-600 dark:text-gray-400 mb-6 text-lg">
+                        Founded in 2015, Nexta Solutions was born from a simple mission: bridge the gap between
+                        stunning
+                        creative design and rigorous data analytics. We don't just generate traffic; we architect
+                        customer journeys that convert.
+                    </p>
+
+                    <!-- Tabs/Timeline -->
+                    <div class="space-y-6 mt-10">
+                        <div class="flex gap-4 items-start">
+                            <div
+                                class="w-12 h-12 rounded-full glass flex items-center justify-center text-brandOrange text-xl flex-shrink-0">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold mb-2">Our Vision</h4>
+                                <p class="text-gray-600 dark:text-gray-400 text-sm">To be the global benchmark for
+                                    performance marketing, elevating brands through transparent, scalable, and
+                                    innovative strategies.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4 items-start">
+                            <div
+                                class="w-12 h-12 rounded-full glass flex items-center justify-center text-brandOrange text-xl flex-shrink-0">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold mb-2">Why Choose Us</h4>
+                                <p class="text-gray-600 dark:text-gray-400 text-sm">We operate as an extension of your
+                                    team. No vanity metrics, zero hidden fees—just measurable ROI and dedicated account
+                                    management.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-10">
+                        <a href="#contact"
+                            class="inline-flex items-center gap-2 font-bold text-brandOrange hover:text-brandGold transition group">
+                            Speak with our team <i
+                                class="fas fa-arrow-right group-hover:translate-x-2 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4) PORTFOLIO / CASE STUDIES -->
+    <section id="portfolio" class="py-24 bg-gray-50 dark:bg-[#121212]">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+                <h3 class="text-brandOrange font-bold tracking-wider uppercase text-sm mb-2">Case Studies</h3>
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">Proven <span class="text-gradient">Results</span></h2>
+                <p class="text-gray-600 dark:text-gray-400">Explore how we've transformed businesses across industries
+                    with data-backed strategies.</p>
+            </div>
+
+            <!-- Filters -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12 reveal delay-100">
+                <button
+                    class="filter-btn active px-6 py-2 rounded-full glass font-semibold border border-gray-300 dark:border-gray-700 hover:text-brandOrange transition"
+                    data-filter="all">All</button>
+                <button
+                    class="filter-btn px-6 py-2 rounded-full glass font-semibold border border-gray-300 dark:border-gray-700 hover:text-brandOrange transition"
+                    data-filter="seo">SEO</button>
+                <button
+                    class="filter-btn px-6 py-2 rounded-full glass font-semibold border border-gray-300 dark:border-gray-700 hover:text-brandOrange transition"
+                    data-filter="ads">Ads</button>
+                <button
+                    class="filter-btn px-6 py-2 rounded-full glass font-semibold border border-gray-300 dark:border-gray-700 hover:text-brandOrange transition"
+                    data-filter="web">Web Dev</button>
+            </div>
+
+            <!-- Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 portfolio-grid reveal delay-200">
+                <!-- Item 1 -->
+                <div class="portfolio-item relative group card-radius overflow-hidden cursor-pointer"
+                    data-category="seo">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800"
+                        alt="Tech Startup Growth"
+                        class="w-full h-[400px] object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-90 transition-opacity">
+                    </div>
+                    <div
+                        class="absolute bottom-0 left-0 w-full p-8 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                        <span
+                            class="inline-block px-3 py-1 rounded-full bg-brandOrange text-white text-xs font-bold mb-3">SEO</span>
+                        <h3 class="text-2xl font-bold text-white mb-2">FinTech Startup Scale</h3>
+                        <p class="text-gray-300 text-sm mb-4 line-clamp-2">Increased organic traffic by 450% in 6 months
+                            using programmatic SEO and content silos.</p>
+                        <div class="flex justify-between items-center">
+                            <div class="text-brandGold font-bold text-xl">+450% Traffic</div>
+                            <button class="text-white hover:text-brandOrange transition"><i
+                                    class="fas fa-arrow-right text-xl"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="portfolio-item relative group card-radius overflow-hidden cursor-pointer"
+                    data-category="ads">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800"
+                        alt="E-commerce ROI"
+                        class="w-full h-[400px] object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-90 transition-opacity">
+                    </div>
+                    <div
+                        class="absolute bottom-0 left-0 w-full p-8 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                        <span
+                            class="inline-block px-3 py-1 rounded-full bg-blue-500 text-white text-xs font-bold mb-3">Google
+                            Ads</span>
+                        <h3 class="text-2xl font-bold text-white mb-2">E-Commerce Revenue Multiplier</h3>
+                        <p class="text-gray-300 text-sm mb-4 line-clamp-2">Optimized shopping feeds and retargeting ads
+                            to drop CPA by 60%.</p>
+                        <div class="flex justify-between items-center">
+                            <div class="text-brandGold font-bold text-xl">8.5x ROAS</div>
+                            <button class="text-white hover:text-brandOrange transition"><i
+                                    class="fas fa-arrow-right text-xl"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="portfolio-item relative group card-radius overflow-hidden cursor-pointer"
+                    data-category="web">
+                    <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=800"
+                        alt="SaaS Website"
+                        class="w-full h-[400px] object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-90 transition-opacity">
+                    </div>
+                    <div
+                        class="absolute bottom-0 left-0 w-full p-8 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                        <span
+                            class="inline-block px-3 py-1 rounded-full bg-purple-500 text-white text-xs font-bold mb-3">Web
+                            Development</span>
+                        <h3 class="text-2xl font-bold text-white mb-2">B2B SaaS Redesign</h3>
+                        <p class="text-gray-300 text-sm mb-4 line-clamp-2">Full UX/UI overhaul and React development,
+                            improving load times and user engagement.</p>
+                        <div class="flex justify-between items-center">
+                            <div class="text-brandGold font-bold text-xl">+120% Leads</div>
+                            <button class="text-white hover:text-brandOrange transition"><i
+                                    class="fas fa-arrow-right text-xl"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="portfolio-item relative group card-radius overflow-hidden cursor-pointer"
+                    data-category="ads">
+                    <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&q=80&w=800"
+                        alt="Brand Awareness"
+                        class="w-full h-[400px] object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-90 transition-opacity">
+                    </div>
+                    <div
+                        class="absolute bottom-0 left-0 w-full p-8 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                        <span
+                            class="inline-block px-3 py-1 rounded-full bg-pink-500 text-white text-xs font-bold mb-3">Meta
+                            Ads</span>
+                        <h3 class="text-2xl font-bold text-white mb-2">Fashion Brand Launch</h3>
+                        <p class="text-gray-300 text-sm mb-4 line-clamp-2">Viral video ad campaign resulting in sold-out
+                            inventory within 48 hours.</p>
+                        <div class="flex justify-between items-center">
+                            <div class="text-brandGold font-bold text-xl">$2M Sales</div>
+                            <button class="text-white hover:text-brandOrange transition"><i
+                                    class="fas fa-arrow-right text-xl"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="#"
+                    class="inline-block px-8 py-4 rounded-[20px] glass font-bold text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-all border border-gray-300 dark:border-gray-700">
+                    View All Case Studies
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5) TESTIMONIALS -->
+    <section class="py-24 relative overflow-hidden">
+        <!-- Decoration -->
+        <div
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full bg-brandOrange/5 blur-[100px] -z-10">
+        </div>
+
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+                <h3 class="text-brandOrange font-bold tracking-wider uppercase text-sm mb-2">Testimonials</h3>
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">Client <span class="text-gradient">Success
+                        Stories</span></h2>
+            </div>
+
+            <div class="relative max-w-4xl mx-auto reveal delay-100">
+                <!-- Slider Container -->
+                <div class="overflow-hidden rounded-[20px] glass border-0 shadow-2xl p-8 md:p-12 relative">
+                    <!-- Quote Icon -->
+                    <i class="fas fa-quote-right absolute top-8 right-10 text-6xl text-brandOrange/20"></i>
+
+                    <div class="slider-wrapper" id="testimonialSlider">
+                        <!-- Slide 1 -->
+                        <div class="slide px-4">
+                            <div class="flex text-brandGold text-xl mb-6"><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i></div>
+                            <p
+                                class="text-xl md:text-2xl font-medium leading-relaxed mb-8 text-gray-800 dark:text-gray-200">
+                                "Nexta Solutions completely overhauled our lead generation strategy. Within three
+                                months,
+                                our pipeline tripled, and cost-per-lead dropped by 40%. They are absolute
+                                professionals."
+                            </p>
+                            <div class="flex items-center gap-4">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop"
+                                    alt="Client" class="w-14 h-14 rounded-full object-cover">
+                                <div>
+                                    <h4 class="font-bold text-lg">Mark Johnson</h4>
+                                    <p class="text-gray-500 text-sm">CMO, TeFlow Solutions</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="slide px-4">
+                            <div class="flex text-brandGold text-xl mb-6"><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i></div>
+                            <p
+                                class="text-xl md:text-2xl font-medium leading-relaxed mb-8 text-gray-800 dark:text-gray-200">
+                                "We had struggled with SEO for years. The team at Aura rebuilt our entire site
+                                architecture, and we now rank #1 for our most competitive keywords. Truly
+                                game-changing."
+                            </p>
+                            <div class="flex items-center gap-4">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop"
+                                    alt="Client" class="w-14 h-14 rounded-full object-cover">
+                                <div>
+                                    <h4 class="font-bold text-lg">Sarah Jenkins</h4>
+                                    <p class="text-gray-500 text-sm">Founder, LuxRetail</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <div class="flex justify-center gap-2 mt-8">
+                        <button class="slider-dot w-3 h-3 rounded-full bg-brandOrange transition-all"
+                            data-index="0"></button>
+                        <button class="slider-dot w-3 h-3 rounded-full bg-gray-400 dark:bg-gray-600 transition-all"
+                            data-index="1"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6) PRICING SECTION -->
+    <section id="pricing" class="py-24 bg-gray-50 dark:bg-[#121212]">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+                <h3 class="text-brandOrange font-bold tracking-wider uppercase text-sm mb-2">Transparent Pricing</h3>
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">Invest in <span class="text-gradient">Growth</span></h2>
+                <p class="text-gray-600 dark:text-gray-400">Flexible plans tailored to scale with your business. No
+                    hidden fees.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto items-center">
+                <!-- Plan 1 -->
+                <div
+                    class="glass card-radius p-8 reveal border border-gray-200 dark:border-gray-800 relative z-10 bg-white/50 dark:bg-black/20">
+                    <h4 class="text-2xl font-bold mb-2">Starter</h4>
+                    <p class="text-gray-500 text-sm mb-6">For small businesses making their mark.</p>
+                    <div class="text-4xl font-extrabold mb-6">$1,500<span
+                            class="text-lg text-gray-500 font-normal">/mo</span></div>
+                    <ul class="space-y-4 mb-8 text-gray-700 dark:text-gray-300 text-sm">
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-green-500"></i> Local SEO Setup
+                        </li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-green-500"></i> Social Media
+                            Management</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-green-500"></i> Basic Ad
+                            Campaigns</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-green-500"></i> Monthly
+                            Reporting</li>
+                        <li class="flex items-center gap-3 text-gray-400 dark:text-gray-600"><i
+                                class="fas fa-times"></i> Advanced Automation</li>
+                    </ul>
+                    <button
+                        class="w-full py-3 rounded-[15px] border-2 border-brandOrange text-brandOrange font-bold hover:bg-brandOrange hover:text-white transition">Get
+                        Started</button>
+                </div>
+
+                <!-- Plan 2 (Most Popular) -->
+                <div class="glow-border card-radius reveal delay-100 z-20 md:-mt-8 md:mb-8">
+                    <div class="bg-lightBg dark:bg-darkBg card-radius p-8 relative h-full">
+                        <div
+                            class="absolute top-0 right-0 bg-gradient-brand text-darkBg text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-[20px] uppercase tracking-wider">
+                            Most Popular</div>
+                        <h4 class="text-2xl font-bold mb-2">Growth</h4>
+                        <p class="text-gray-500 text-sm mb-6">For scaling brands needing serious volume.</p>
+                        <div class="text-4xl font-extrabold mb-6 text-gradient">$3,500<span
+                                class="text-lg text-gray-500 font-normal text-gray-800 dark:text-white">/mo</span></div>
+                        <ul class="space-y-4 mb-8 text-gray-700 dark:text-gray-300 text-sm font-medium">
+                            <li class="flex items-center gap-3"><i class="fas fa-check text-brandOrange"></i>
+                                Comprehensive Global SEO</li>
+                            <li class="flex items-center gap-3"><i class="fas fa-check text-brandOrange"></i>
+                                Multi-channel Ad Scaling</li>
+                            <li class="flex items-center gap-3"><i class="fas fa-check text-brandOrange"></i> CRO &
+                                Landing Pages</li>
+                            <li class="flex items-center gap-3"><i class="fas fa-check text-brandOrange"></i> Weekly
+                                Strategy Calls</li>
+                            <li class="flex items-center gap-3"><i class="fas fa-check text-brandOrange"></i> Dedicated
+                                Account Manager</li>
+                        </ul>
+                        <button
+                            class="w-full py-4 rounded-[15px] bg-gradient-brand text-darkBg font-bold shadow-lg hover:shadow-orange-500/50 transition transform hover:-translate-y-1">Scale
+                            Now</button>
+                    </div>
+                </div>
+
+                <!-- Plan 3 -->
+                <div
+                    class="glass card-radius p-8 reveal delay-200 border border-gray-200 dark:border-gray-800 relative z-10 bg-white/50 dark:bg-black/20">
+                    <h4 class="text-2xl font-bold mb-2">Enterprise</h4>
+                    <p class="text-gray-500 text-sm mb-6">Custom solutions for market leaders.</p>
+                    <div class="text-4xl font-extrabold mb-6">Custom</div>
+                    <ul class="space-y-4 mb-8 text-gray-700 dark:text-gray-300 text-sm">
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-green-500"></i> Full Digital
+                            Transformation</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-green-500"></i> Custom Web Apps
+                            & AI</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-green-500"></i> Omnichannel
+                            Domination</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-green-500"></i> Predictive
+                            Analytics</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-green-500"></i> 24/7 Priority
+                            Support</li>
+                    </ul>
+                    <button
+                        class="w-full py-3 rounded-[15px] border-2 border-gray-400 text-gray-600 dark:text-gray-300 font-bold hover:bg-gray-100 dark:hover:bg-gray-800 transition">Contact
+                        Sales</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7) BLOG SECTION -->
+    <section id="blog" class="py-24">
+        <div class="container mx-auto px-6">
+            <div class="flex justify-between items-end mb-12 reveal">
+                <div class="max-w-2xl">
+                    <h3 class="text-brandOrange font-bold tracking-wider uppercase text-sm mb-2">Insights</h3>
+                    <h2 class="text-4xl md:text-5xl font-bold">Latest <span class="text-gradient">Articles</span></h2>
+                </div>
+                <a href="#"
+                    class="hidden md:inline-flex items-center gap-2 font-bold hover:text-brandOrange transition">
+                    Read All Insights <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Blog 1 -->
+                <article class="glass card-radius overflow-hidden group hover-glow reveal cursor-pointer">
+                    <div class="overflow-hidden h-56 relative">
+                        <img src="https://images.unsplash.com/photo-1432828684860-e0474668db75?auto=format&fit=crop&q=80&w=600"
+                            alt="SEO in 2025"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div
+                            class="absolute top-4 left-4 bg-darkBg text-white px-3 py-1 rounded-full text-xs font-bold shadow">
+                            SEO</div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-sm text-gray-500 mb-2">March 12, 2025 • 5 min read</p>
+                        <h3 class="text-xl font-bold mb-3 group-hover:text-brandOrange transition-colors line-clamp-2">
+                            The Future of AI in Search Engine Optimization</h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm line-clamp-2">How generative AI algorithms
+                            are changing the way we rank on Google.</p>
+                    </div>
+                </article>
+
+                <!-- Blog 2 -->
+                <article class="glass card-radius overflow-hidden group hover-glow reveal delay-100 cursor-pointer">
+                    <div class="overflow-hidden h-56 relative">
+                        <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&q=80&w=600"
+                            alt="Social Media Trends"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div
+                            class="absolute top-4 left-4 bg-brandOrange text-white px-3 py-1 rounded-full text-xs font-bold shadow">
+                            Social Media</div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-sm text-gray-500 mb-2">March 08, 2025 • 4 min read</p>
+                        <h3 class="text-xl font-bold mb-3 group-hover:text-brandOrange transition-colors line-clamp-2">
+                            Mastering Short-Form Video for B2B Brands</h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm line-clamp-2">Why TikTok and Reels are no
+                            longer just for consumer brands.</p>
+                    </div>
+                </article>
+
+                <!-- Blog 3 -->
+                <article class="glass card-radius overflow-hidden group hover-glow reveal delay-200 cursor-pointer">
+                    <div class="overflow-hidden h-56 relative">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=600"
+                            alt="Web Performance"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div
+                            class="absolute top-4 left-4 bg-purple-500 text-white px-3 py-1 rounded-full text-xs font-bold shadow">
+                            Development</div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-sm text-gray-500 mb-2">March 02, 2025 • 7 min read</p>
+                        <h3 class="text-xl font-bold mb-3 group-hover:text-brandOrange transition-colors line-clamp-2">
+                            Core Web Vitals: The Silent Conversion Killer</h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm line-clamp-2">How a 1-second delay in page
+                            load time costs you thousands in revenue.</p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="mt-8 text-center md:hidden">
+                <a href="#" class="inline-flex items-center gap-2 font-bold text-brandOrange">
+                    Read All Insights <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8) CONTACT SECTION -->
+    <section id="contact" class="py-24 relative overflow-hidden bg-gray-50 dark:bg-[#121212]">
+        <div class="container mx-auto px-6 relative z-10">
+            <div
+                class="glass card-radius p-8 md:p-14 border border-gray-200 dark:border-gray-800 shadow-2xl reveal relative overflow-hidden">
+                <!-- BG Blur -->
+                <div class="absolute top-0 right-0 w-96 h-96 bg-brandOrange/10 blur-[100px] rounded-full -z-10"></div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                    <!-- Text & Info -->
+                    <div>
+                        <h2 class="text-4xl md:text-5xl font-bold mb-6">Let's Talk <span
+                                class="text-gradient">Growth</span></h2>
+                        <p class="text-gray-600 dark:text-gray-400 mb-10 text-lg">Ready to scale? Fill out the form, and
+                            our strategists will reach out within 24 hours to schedule your free consultation.</p>
+
+                        <div class="space-y-6">
+                            <div class="flex items-center gap-4">
+                                <div
+                                    class="w-12 h-12 rounded-full bg-brandOrange/20 flex items-center justify-center text-brandOrange text-xl">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-500">Email Us</p>
+                                    <p class="font-bold text-lg">hello@auradigital.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <div
+                                    class="w-12 h-12 rounded-full bg-brandGold/20 flex items-center justify-center text-brandGold text-xl">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-500">Call Us</p>
+                                    <p class="font-bold text-lg">+1 (800) 555-0199</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <div
+                                    class="w-12 h-12 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-500 text-xl">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-500">Visit Us</p>
+                                    <p class="font-bold text-lg">100 Wall Street, NY 10005</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Social -->
+                        <div class="flex gap-4 mt-10">
+                            <a href="#"
+                                class="w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-brandOrange hover:text-white transition"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                            <a href="#"
+                                class="w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-brandOrange hover:text-white transition"><i
+                                    class="fab fa-twitter"></i></a>
+                            <a href="#"
+                                class="w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-brandOrange hover:text-white transition"><i
+                                    class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Form -->
+                    <form id="contactForm" class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-semibold mb-2">First Name</label>
+                                <input type="text"
+                                    class="w-full bg-lightBg dark:bg-darkBg border border-gray-300 dark:border-gray-700 rounded-xl px-4 py-3 focus:outline-none focus:border-brandOrange transition-colors"
+                                    placeholder="John" required>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold mb-2">Last Name</label>
+                                <input type="text"
+                                    class="w-full bg-lightBg dark:bg-darkBg border border-gray-300 dark:border-gray-700 rounded-xl px-4 py-3 focus:outline-none focus:border-brandOrange transition-colors"
+                                    placeholder="Doe" required>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold mb-2">Work Email</label>
+                            <input type="email"
+                                class="w-full bg-lightBg dark:bg-darkBg border border-gray-300 dark:border-gray-700 rounded-xl px-4 py-3 focus:outline-none focus:border-brandOrange transition-colors"
+                                placeholder="john@company.com" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold mb-2">Company Website</label>
+                            <input type="url"
+                                class="w-full bg-lightBg dark:bg-darkBg border border-gray-300 dark:border-gray-700 rounded-xl px-4 py-3 focus:outline-none focus:border-brandOrange transition-colors"
+                                placeholder="https://">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold mb-2">How can we help?</label>
+                            <textarea rows="4"
+                                class="w-full bg-lightBg dark:bg-darkBg border border-gray-300 dark:border-gray-700 rounded-xl px-4 py-3 focus:outline-none focus:border-brandOrange transition-colors resize-none"
+                                placeholder="Tell us about your goals..." required></textarea>
+                        </div>
+                        <button type="submit"
+                            class="w-full py-4 rounded-xl bg-gradient-brand text-darkBg font-bold text-lg shadow-lg hover:shadow-orange-500/50 transition transform hover:-translate-y-1">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Embed -->
+    <div class="w-full h-80 filter grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-500">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.617540833158!2d-74.00898568459418!3d40.70603607933263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a165bedccab%3A0x2cb2ddf003b5ae01!2sWall%20St%2C%20New%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1683100000000!5m2!1sen!2sus"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-lightBg dark:bg-[#0a0a0a] pt-20 pb-10 border-t border-gray-200 dark:border-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <!-- Col 1 -->
+                <div>
+                    <a href="#" class="text-3xl font-bold tracking-tight text-gradient mb-6 inline-block">
+                        Nexta<span class="text-brandOrange dark:text-white text-lg ml-1">Solutions</span>
+                    </a>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-6">
+                        An award-winning digital marketing agency dedicated to scaling brands globally through
+                        innovative, data-driven strategies.
+                    </p>
+                </div>
+
+                <!-- Col 2 -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6 text-gray-800 dark:text-white">Services</h4>
+                    <ul class="space-y-3 text-sm text-gray-500">
+                        <li><a href="#" class="hover:text-brandOrange transition">SEO Optimization</a></li>
+                        <li><a href="#" class="hover:text-brandOrange transition">Social Media Marketing</a></li>
+                        <li><a href="#" class="hover:text-brandOrange transition">Google & Meta Ads</a></li>
+                        <li><a href="#" class="hover:text-brandOrange transition">Web Development</a></li>
+                        <li><a href="#" class="hover:text-brandOrange transition">AI Automation</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3 -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6 text-gray-800 dark:text-white">Company</h4>
+                    <ul class="space-y-3 text-sm text-gray-500">
+                        <li><a href="#about" class="hover:text-brandOrange transition">About Us</a></li>
+                        <li><a href="#portfolio" class="hover:text-brandOrange transition">Case Studies</a></li>
+                        <li><a href="#pricing" class="hover:text-brandOrange transition">Pricing</a></li>
+                        <li><a href="#blog" class="hover:text-brandOrange transition">Blog Insights</a></li>
+                        <li><a href="#" class="hover:text-brandOrange transition">Careers</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4 -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6 text-gray-800 dark:text-white">Newsletter</h4>
+                    <p class="text-sm text-gray-500 mb-4">Get the latest growth hacks directly in your inbox.</p>
+                    <form class="flex relative">
+                        <input type="email" placeholder="Your Email"
+                            class="w-full bg-white dark:bg-darkBg border border-gray-300 dark:border-gray-700 rounded-full px-4 py-3 text-sm focus:outline-none focus:border-brandOrange">
+                        <button type="submit"
+                            class="absolute right-1 top-1 bottom-1 bg-brandOrange text-white rounded-full px-4 text-sm font-bold hover:bg-orange-600 transition">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div
+                class="border-t border-gray-200 dark:border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+                <p>&copy; 2025 Nexta Solutions Agency. All rights reserved.</p>
+                <div class="space-x-4 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-brandOrange transition">Privacy Policy</a>
+                    <a href="#" class="hover:text-brandOrange transition">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/0330-3841020" target="_blank"
+        class="fixed bottom-6 right-6 w-14 h-14 bg-green-500 text-white rounded-full flex items-center justify-center text-3xl shadow-lg hover:shadow-green-500/50 hover:scale-110 transition-all z-40"
+        aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Lead Capture Popup Overlay -->
+    <div id="leadPopup"
+        class="fixed inset-0 bg-black/80 z-[60] hidden flex items-center justify-center backdrop-blur-sm opacity-0 transition-opacity duration-300">
+        <div
+            class="bg-lightBg dark:bg-darkCard p-8 md:p-10 rounded-[20px] max-w-md w-full mx-4 relative transform scale-95 transition-transform duration-300 border border-gray-200 dark:border-gray-700 shadow-2xl">
+            <button id="closePopupBtn" class="absolute top-4 right-4 text-gray-500 hover:text-brandOrange text-xl"><i
+                    class="fas fa-times"></i></button>
+            <div class="text-center mb-6">
+                <div
+                    class="w-16 h-16 bg-brandOrange/20 text-brandOrange rounded-full flex items-center justify-center text-2xl mx-auto mb-4">
+                    <i class="fas fa-gift"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-2">Want a Free SEO Audit?</h3>
+                <p class="text-gray-500 text-sm">Enter your email and website, and we'll send you a detailed video
+                    breakdown of how to double your traffic.</p>
+            </div>
+            <form id="popupForm" class="space-y-4">
+                <input type="url" placeholder="Your Website URL"
+                    class="w-full bg-white dark:bg-darkBg border border-gray-300 dark:border-gray-700 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brandOrange"
+                    required>
+                <input type="email" placeholder="Your Email Address"
+                    class="w-full bg-white dark:bg-darkBg border border-gray-300 dark:border-gray-700 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brandOrange"
+                    required>
+                <button type="submit"
+                    class="w-full py-3 rounded-xl bg-gradient-brand text-darkBg font-bold shadow-lg hover:shadow-orange-500/50 transition transform hover:-translate-y-1">Get
+                    My Free Audit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
